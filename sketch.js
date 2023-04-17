@@ -4,7 +4,7 @@ let mic;
 
  function setup(){
   //createCanvas((windowHeight/3), windowHeight);
-  getAudioContext().suspend();
+  //getAudioContext().suspend();
   mycanvas = createCanvas(120, 360);
   background(255);
   mic = new p5.AudioIn();
