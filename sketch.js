@@ -23,7 +23,7 @@ let mic;
    line (x1, y1, x2, y2);
    
  }
-function mousePressed(){
+function touchStarted(){
  userStartAudio();
 }
 
