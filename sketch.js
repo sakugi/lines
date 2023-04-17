@@ -13,8 +13,9 @@ let mic;
   strokeCap(SQUARE);
   loop();
 }
-function touchStarted(){
+function mousePressed(){
  userStartAudio();
+ return false;
 }
  function blackLine(x1, y1, x2, y2){
    stroke(0);
