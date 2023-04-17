@@ -13,6 +13,9 @@ let mic;
   strokeCap(SQUARE);
   loop();
 }
+function touchStarted(){
+ userStartAudio();
+}
  function blackLine(x1, y1, x2, y2){
    stroke(0);
    line (x1, y1, x2, y2);
@@ -23,9 +26,6 @@ let mic;
    line (x1, y1, x2, y2);
    
  }
-function touchStarted(){
- userStartAudio();
-}
 
 
 function draw(){      
