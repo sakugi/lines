@@ -4,8 +4,7 @@ let mic;
 let waitForClick = true;
 
  function setup(){
-  //createCanvas((windowHeight/3), windowHeight);
-  getAudioContext().suspend();
+  //getAudioContext().suspend();
   mycanvas = createCanvas(120, 360);
   background(255);
   //mic = new p5.AudioIn();
@@ -45,7 +44,6 @@ function draw(){
  // console.log(micLevel);
   x2 --;
   whiteLine(11, y2, x2, y2)
-  //if(y2 < (windowHeight-30)){
   if(y2 < 330){
       if (micLevel > 0.05){
         blackLine(11, y2, (x2), y2)
