@@ -8,16 +8,16 @@ let waitForClick = true;
   getAudioContext().suspend();
   mycanvas = createCanvas(120, 360);
   background(255);
-  mic = new p5.AudioIn();
-  mic.start();
+  //mic = new p5.AudioIn();
+  //mic.start();
   frameRate(15);
   strokeCap(SQUARE);
   loop();
 }
 function touchStarted(){
  if (!waitForClick) return;
- mic = new p5.AudioIn();
  userStartAudio();
+ mic = new p5.AudioIn();
  background(255);
  mic.start();
  waitForClick = false;
