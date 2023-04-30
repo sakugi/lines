@@ -11,7 +11,7 @@ let waitForClick = true;
   //mic.start();
   frameRate(15);
   strokeCap(SQUARE);
-  strokeWeight(40);
+  strokeWeight(60);
   loop();
 }
 function touchStarted(){
