@@ -11,6 +11,7 @@ let waitForClick = true;
   //mic.start();
   frameRate(15);
   strokeCap(SQUARE);
+  strokeWeight(60);
   loop();
 }
 function touchStarted(){
@@ -39,7 +40,7 @@ function draw(){
     background(33);
    return;
  } 
-  strokeWeight(60);
+  //strokeWeight(60);
   micLevel = mic.getLevel();
  // console.log(micLevel);
   x2 --;
