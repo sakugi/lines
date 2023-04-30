@@ -1,11 +1,11 @@
-let x2 = 110;
-let y2 =30;
+let x2 = 1100;
+let y2 =300;
 let mic;
 let waitForClick = true;
 
  function setup(){
   //getAudioContext().suspend();
-  mycanvas = createCanvas(120, 360);
+  mycanvas = createCanvas(1200, 3600);
   background(255);
   //mic = new p5.AudioIn();
   //mic.start();
@@ -44,19 +44,19 @@ function draw(){
  // console.log(micLevel);
   x2 --;
   whiteLine(11, y2, x2, y2)
-  if(y2 < 330){
+  if(y2 < 3300){
       if (micLevel > 0.05){
         blackLine(11, y2, (x2), y2)
       }
     }
-  if (x2 == 10){
-      x2 = 110;
-      y2 = y2 +10;
+  if (x2 == 100){
+      x2 = 1100;
+      y2 = y2 +100;
       }
-  if(y2==330){
+  if(y2==3300){
      saveCanvas(mycanvas,"present moment_" + Date.now(),"png");
      clear();    
      background(255);
-     y2 = 30;
+     y2 = 300;
   }
 }
