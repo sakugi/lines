@@ -39,14 +39,14 @@ function draw(){
     background(33);
    return;
  } 
-  strokeWeight(6);
+  strokeWeight(60);
   micLevel = mic.getLevel();
  // console.log(micLevel);
   x2 --;
-  whiteLine(11, y2, x2, y2)
+  whiteLine(110, y2, x2, y2)
   if(y2 < 3300){
       if (micLevel > 0.05){
-        blackLine(11, y2, (x2), y2)
+        blackLine(110, y2, (x2), y2)
       }
     }
   if (x2 == 100){
