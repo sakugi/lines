@@ -1,18 +1,18 @@
-let x2 = 390;
+let x2 = 110;
 let y2 =30;
 let mic;
 // let waitForClick = true;
 
  function setup(){
   //getAudioContext().suspend();
- let cnv = createCanvas(390, 844);
+  let cnv = createCanvas(120, 360);
   background(255);
   cnv.touchStarted(userStartAudio);
   mic = new p5.AudioIn();
   mic.start();
   frameRate(15);
   strokeCap(SQUARE);
-  strokeWeight(18);
+  strokeWeight(6);
   loop();
 }
 //function touchStarted(){
@@ -45,17 +45,17 @@ function draw(){
   micLevel = mic.getLevel();
  // console.log(micLevel);
   x2 --;
-  whiteLine(30, y2, x2, y2)
-  if(y2 < 840){
+  whiteLine(11, y2, x2, y2)
+  if(y2 < 330){
       if (micLevel > 0.05){
-        blackLine(30, y2, (x2), y2)
+        blackLine(11, y2, (x2), y2)
       }
     }
-  if (x2 == 30){
-      x2 = 390;
+  if (x2 == 10){
+      x2 = 110;
       y2 = y2 +10;
       }
-  if(y2==840){
+  if(y2==330){
      saveCanvas(cnv,"present moment_" + Date.now(),"png");
      clear();    
      background(255);
