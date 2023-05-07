@@ -1,4 +1,4 @@
-let x2 = 110;
+let x2 = 390;
 let y2 =30;
 let mic;
 // let waitForClick = true;
@@ -45,17 +45,17 @@ function draw(){
   micLevel = mic.getLevel();
  // console.log(micLevel);
   x2 --;
-  whiteLine(11, y2, x2, y2)
-  if(y2 < 330){
+  whiteLine(30, y2, x2, y2)
+  if(y2 < 840){
       if (micLevel > 0.05){
-        blackLine(11, y2, (x2), y2)
+        blackLine(30, y2, (x2), y2)
       }
     }
-  if (x2 == 10){
-      x2 = 110;
+  if (x2 == 30){
+      x2 = 390;
       y2 = y2 +10;
       }
-  if(y2==330){
+  if(y2==840){
      saveCanvas(cnv,"present moment_" + Date.now(),"png");
      clear();    
      background(255);
