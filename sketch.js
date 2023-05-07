@@ -5,14 +5,14 @@ let mic;
 
  function setup(){
   //getAudioContext().suspend();
- let cnv = createCanvas(120, 360);
+ let cnv = createCanvas(390, 844);
   background(255);
   cnv.touchStarted(userStartAudio);
   mic = new p5.AudioIn();
   mic.start();
   frameRate(15);
   strokeCap(SQUARE);
-  strokeWeight(6);
+  strokeWeight(18);
   loop();
 }
 //function touchStarted(){
