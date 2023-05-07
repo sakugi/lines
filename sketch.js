@@ -23,10 +23,6 @@ function touchStarted(){
  waitForClick = false;
  return false;
 }
-function touchMoved() { //new check
-mouseClicked();
-return false;
-}
  function blackLine(x1, y1, x2, y2){
    stroke(0);
    line (x1, y1, x2, y2);
