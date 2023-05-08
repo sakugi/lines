@@ -25,7 +25,7 @@ let mic;
  //return false;
 //}
  function blackLine(x1, y1, x2, y2){
-   stroke(0);
+   stroke(10);
    line (x1, y1, x2, y2);
    
  }
@@ -47,7 +47,7 @@ function draw(){
   x2 --;
   whiteLine(11, y2, x2, y2)
   if(y2 < 330){
-      if (micLevel > 0.05){
+      if (micLevel > 0){
         blackLine(11, y2, (x2), y2)
       }
     }
