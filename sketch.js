@@ -10,7 +10,7 @@ let mic;
   cnv.mousePressed(userStartAudio);
   mic = new p5.AudioIn();
   mic.start();
-  frameRate(15);
+  frameRate(30);
   strokeCap(SQUARE);
   strokeWeight(45);
   loop();
@@ -47,7 +47,7 @@ function draw(){
   x2 --;
   whiteLine(100, y2, x2, y2)
   if(y2 < 1300){
-      if (micLevel > 0.002){
+      if (micLevel > 0.001){
         blackLine(100 , y2, (x2), y2)
       }
     }
