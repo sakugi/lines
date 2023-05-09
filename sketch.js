@@ -46,7 +46,7 @@ function draw(){
   //console.log(micLevel);
   x2 --;
   whiteLine(100, y2, x2, y2)
-  if(y2 < 1300){
+  if(y2 < 1200){
       if (micLevel > 0.001){
         blackLine(100 , y2, (x2), y2)
       }
@@ -55,9 +55,9 @@ function draw(){
       x2 = 1000;
       y2 = y2 +90;
       }
-  if(y2==1200){
+  if(y2>=1200){
      //saveCanvas(cnv,"present moment_" + Date.now(),"png");
-    // clear();    
+     clear();    
      background(255);
      y2 = 90;
   }
