@@ -7,7 +7,7 @@ let mic;
   //getAudioContext().suspend();
   let cnv = createCanvas(1024, 1366);
   background(255);
-  cnv.mousePressed(userStartAudio);
+//  cnv.mousePressed(userStartAudio);
   mic = new p5.AudioIn();
   mic.start();
   frameRate(30);
