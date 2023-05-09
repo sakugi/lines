@@ -56,7 +56,7 @@ function draw(){
       y2 = y2 +90;
       }
   if(y2==1300){
-     saveCanvas(cnv,"present moment_" + Date.now(),"png");
+     //saveCanvas(cnv,"present moment_" + Date.now(),"png");
      clear();    
      background(255);
      y2 = 90;
