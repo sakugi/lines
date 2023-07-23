@@ -25,7 +25,7 @@ let mic;
  //return false;
 //}
  function blackLine(x1, y1, x2, y2){
-   stroke(50);
+   stroke(0);
    line (x1, y1, x2, y2);
    
  }
