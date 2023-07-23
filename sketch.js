@@ -43,7 +43,7 @@ function draw(){
 // } 
   //strokeWeight(60);
   micLevel = mic.getLevel();
-  //console.log(micLevel);
+  console.log(micLevel);
   x2 --;
   whiteLine(100, y2, x2, y2)
   if(y2 < 1200){
