@@ -47,7 +47,7 @@ function draw(){
   x2 --;
   whiteLine(100, y2, x2, y2)
   if(y2 < 1200){
-      if (micLevel > 0.01){
+      if (micLevel > 0.001){
         blackLine(100 , y2, (x2), y2)
       }
     }
